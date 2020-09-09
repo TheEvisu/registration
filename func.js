@@ -75,12 +75,12 @@ function buttonLoginPass() {
     const divReg = document.createElement('div');
     const btnRegister = document.createElement('button');
     const textBtnRegister = document.createTextNode('Register');
-    btnRegister.className = 'btn-info flex-container';
+    btnRegister.className = 'btn-info flex-container col p-1 m-1';
 
     const divLogin = document.createElement('div');
     const btnLogin = document.createElement('button');
     const textBtnLogin = document.createTextNode('Login');
-    btnLogin.className = 'btn-primary flex-container';
+    btnLogin.className = 'btn-primary flex-container col p-1 m-1';
 
 
     root.appendChild(divLogin); //Создаём кнопку логин
@@ -108,7 +108,7 @@ function btnHome() {
     root.appendChild(divHome); //Создаём кнопку Home
     btnHome.appendChild(textBtnHome);
     divHome.appendChild(btnHome);
-    btnHome.className = 'btn-primary';
+    btnHome.className = 'btn-primary col p-1 m-1';
 
     btnHome.onclick = function () {  // событие при клике возвращает на страницу index
         document.location.href = 'index.html';
